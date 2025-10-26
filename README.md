@@ -2,8 +2,8 @@
 
 ## Nhóm thực hiện
 
-- **Thành viên 1:** Trần Trường Thọ
-- **Thành viên 2:** Nguyễn Minh Khuê
+- **Thành viên 1:** Trần Trường Thọ - MSV: 241230855
+- **Thành viên 2:** Nguyễn Minh Khuê - MSV: 231230815
 
 ---
 
@@ -13,8 +13,6 @@
 
 - **Phần A:** Quản lý bãi đỗ xe.
 - **Phần B:** Quản lý playlist nghe nhạc.
-
-Mỗi phần sẽ được triển khai nhằm áp dụng các cấu trúc dữ liệu đã học, kết hợp thuật toán quản lý, tìm kiếm, và thao tác dữ liệu theo hướng tối ưu.
 
 ---
 
@@ -43,28 +41,22 @@ Xây dựng chương trình mô phỏng hoạt động của một bãi đỗ xe
 
 ### 1. Mục tiêu
 
-Xây dựng chương trình quản lý danh sách phát nhạc, cho phép thêm, xóa, duyệt và phát bài hát.
+Xây dựng chương trình quản lý danh sách phát nhạc, cho phép thêm, xóa, duyệt theo 2 chiều và phát bài hát.
+Tự xây dựng lại cấu trúc danh sách liên kết đôi.
 
 ### 2. Chức năng dự kiến
 
 - Thêm bài hát mới vào danh sách.
 - Xóa bài hát khỏi danh sách.
-- Phát bài hát tiếp theo hoặc quay lại bài trước.
-- Tìm kiếm bài hát theo tên hoặc ca sĩ.
+- Phát bài hát tiếp theo.
+- Quay lại bài trước.
 - Hiển thị toàn bộ danh sách bài hát.
+- Thoát.
 
-### 3. Cấu trúc dữ liệu sử dụng
+### 3. Cấu trúc dữ liệu sử dụng: Doubly Linked List
 
-- **Doubly Linked List (Danh sách liên kết đôi)** để quản lý các bài hát.
-- **Class Song** lưu thông tin: tiêu đề, ca sĩ, thời lượng.
-
----
-
-## Hướng phát triển tiếp theo
-
-- Tối ưu thuật toán tìm kiếm, sắp xếp.
-- Xây dựng giao diện người dùng (CLI hoặc GUI).
-- Lưu và đọc dữ liệu từ file.
+- **Class Song** lưu thông tin: tên bài hát, ca sĩ, thời lượng.
+- **Class Playlist** quản lý danh sách các bài hát và các chức năng của playlist.
 
 ---
 
