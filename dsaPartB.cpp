@@ -142,7 +142,7 @@ class Playlist{
 				cout << "Playlist trống!" << endl;
 				return;
 			}
-			cout << "Đang phát: " << current->title << " - " << current->artist
+			cout << "\nĐang phát: " << current->title << " - " << current->artist
 				 << " (" << current->duration << " phút)" << endl;
 		}
 		
@@ -203,6 +203,8 @@ int main(){
 	pl.addSong("Chi Mong Em Hanh Phuc", "Hoang Dung", 3.8);
 	pl.addSong("Nevada", "Vicetone", 3.5);
 	pl.addSong("Lac Troi", "Son Tung M-TP", 4.0);
+
+	pl.currentSong();
 	
 	int choice;
 	string title, artist;
