@@ -199,10 +199,10 @@ class Playlist{
 int main(){
 	Playlist pl;
 	
-	pl.addSong("Haru Haru", "BigBang", 4.2); // Đây là bài hát Current
-	pl.addSong("Chi Mong Em Hanh Phuc", "Hoang Dung", 3.8);
-	pl.addSong("Nevada", "Vicetone", 3.5);
-	pl.addSong("Lac Troi", "Son Tung M-TP", 4.0);
+	pl.addSong("Tìm Thấy Nhau", "Sivan", 3.7); // Đây là bài hát Current
+	pl.addSong("Chìm Sâu", "MCK", 2.5);
+	pl.addSong("Em Xinh", "Mono", 2.7);
+	pl.addSong("Lạc Trôi", "Sơn Tùng M-TP", 4.0);
 
 	pl.currentSong();
 	
