@@ -1,0 +1,20 @@
+47F-22113
+Ngo Thanh Tung
+Ford
+6.5
+29C-12345
+Le Thi Bich
+Honda
+7
+51B-77889
+Nguyen Van An
+Toyota
+8
+30A-54321
+Tran Truong Tho
+VinFast
+9
+30A-11111
+Nguyen Minh Khue
+Volvo
+9
