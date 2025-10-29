@@ -1,0 +1,25 @@
+30A-54321
+Tran Truong Tho
+VinFast
+9
+31500
+51B-77889
+Nguyen Van An
+Toyota
+5
+17500
+29C-12345
+Le Thi Bich
+Honda
+7
+24500
+47F-22113
+Ngo Thanh Tung
+Ford
+6.5
+22750
+51A-95467
+Nguyen Minh Khue
+Kia
+9
+31500
