@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// ====================== CLASS CAR ======================
 class Car {
 private:
     string licensePlate;
@@ -46,19 +45,16 @@ public:
              << setw(10) << fee << endl;
     }
 
-    // ===== Getters =====
     string getLicensePlate() const { return licensePlate; }
     string getOwner() const { return owner; }
     string getBrand() const { return brand; }
     float getHours() const { return parkingHours; }
     float getFee() const { return fee; }
 
-    // ===== Setters =====
     void setOwner(const string &o) { owner = o; }
     void setBrand(const string &b) { brand = b; }
     void setHours(float h) { parkingHours = h; fee = calculateFee(); }
 
-    // ===== Operators =====
     friend ostream &operator<<(ostream &out, const Car &c) {
         out << c.licensePlate << '\n'
             << c.owner << '\n'
@@ -79,7 +75,6 @@ public:
     }
 };
 
-// ====================== CLASS PARKING LOT ======================
 class ParkingLot {
 private:
     list<Car> cars;
@@ -91,7 +86,6 @@ public:
     }
     ~ParkingLot() { saveToFile(); }
 
-    // ===== Load / Save =====
     void loadFromFile() {
         ifstream file(dataFile);
         if (!file.is_open()) return;
@@ -112,7 +106,6 @@ public:
         file.close();
     }
 
-    // ===== Utility =====
     bool exists(const string &lp) const {
         for (auto &c : cars)
             if (c.getLicensePlate() == lp)
@@ -129,7 +122,6 @@ public:
         cout << string(67, '-') << endl;
     }
 
-    // ===== Core features =====
     void displayAll() const {
         if (cars.empty()) {
             cout << "Khong co xe nao trong bai.\n";
@@ -257,7 +249,6 @@ public:
     }
 };
 
-// ====================== CLASS APP ======================
 class App {
 private:
     ParkingLot lot;
@@ -315,7 +306,6 @@ public:
     }
 };
 
-// ====================== MAIN ======================
 int main() {
     App app;
     app.run();
