@@ -42,7 +42,9 @@ Xây dựng chương trình giúp quản lý một bãi đỗ xe thông thườn
 - Cập nhật thông tin xe
 - Tìm xe theo biển số
 - Tìm xe theo hãng
-- Sắp xếp xe theo giờ gửi (tăng dần, giảm dần)
+- Sắp xếp xe theo phí gửi tăng dần
+- Sắp xếp xe theo giờ gửi (tăng dần hoặc giảm dần)
+- Tìm xe gửi lâu nhất, ít thời gian nhất
 - Đếm số xe hiện có trong bãi
 - Tính giá tiền gửi xe theo thời gian gửi
 - Lưu dữ liệu vào file
