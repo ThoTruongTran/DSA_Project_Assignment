@@ -1,14 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class Car{
+class Car{ // Đối tượng quản lý Car
     private:
-        string license_plate, owner, brand; 
+        string license_plate, owner, brand; // Quản lý thông qua: biển số, chủ xe, hãng, số giờ gửi và phí
         float hours;
         float fee;
     
     public:
-        Car(){
+        Car(){ // Hàm tạo không đối 
             hours = 0;
             fee = 0;
         }
@@ -261,10 +261,14 @@ class Parking{
                 saveFileAnother("sorted_hours_ascending.txt");
                 cout << "Đã cập nhật file sorted_hours_ascending.txt\n";
             }
-            else{
+            else if(option == 2){
                 carList.sort([](Car &a, Car &b) {return a.getHours() > b.getHours();});
                 saveFileAnother("sorted_hours_descending.txt");
                 cout << "Đã cập nhật file sorted_hours_descending.txt\n";
+            }
+            else{
+                cout << "Sắp xếp không hợp lệ. Vui lòng chọn lại!\n";
+                sortHours();
             }
 
         }
