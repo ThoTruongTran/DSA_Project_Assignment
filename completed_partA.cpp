@@ -159,11 +159,12 @@ class Parking{
             Car c;
             c.input();
             while(checkPlate(c.getLicense_Plate())){
-                cout << "Xe này đã tồn tại! Vui lòng nhập lại: ";
+                cout << "Xe này đã tồn tại! Vui lòng nhập lại!\n";
                 c.input();
             }
             carList.push_back(c);
             cout << "Đã thêm thành công!\n";
+            saveFileDefault();
         }
 
         void removeCar(){
@@ -174,6 +175,7 @@ class Parking{
                 if(it->getLicense_Plate() == lp){
                     carList.erase(it);
                     cout << "Đã xoá!\n";
+                    saveFileDefault();
                     return;
                 }
             }
@@ -189,9 +191,22 @@ class Parking{
                     string newOwner, newBrand;
                     float newHours;
                     cin.ignore();
+
+                    string oldOwner = c.getOwner();
+                    string oldBrand = c.getBrand();
+                    float oldHours = c.getHours();
+                    cout << "Thông tin cũ:\n";
+                    cout << left << setw(12) << "Bien so" << setw(25) << "Chu xe" << setw(15) << "Hang" << setw(10) << "Gio" << setw(10) << "Phi" << endl;
+                    cout << string(75, '-') << endl;
+                    c.display();
+                    
                     cout << "Nhập tên chủ xe mới: "; getline(cin, newOwner);
+                    if(newOwner.empty()) newOwner = oldOwner;
                     cout << "Nhập hãng xe mới: "; getline(cin, newBrand);
-                    cout << "Nhập số giờ mới: "; cin >> newHours;
+                    if(newBrand.empty()) newBrand = oldBrand;
+                    cout << "Nhập số giờ mới: ";
+                    string tempHours; getline(cin, tempHours);
+                    if(tempHours.empty()) newHours = oldHours;
                     if(newHours <= 0){
                         cout << "Không hợp lệ! Vui lòng nhập lại số giờ mới: ";
                         cin >> newHours;
@@ -201,6 +216,8 @@ class Parking{
                     c.setBrand(newBrand);
                     c.setHours(newHours);
                     cout << "Cập nhật thành công!\n";
+                    displayAll();
+                    saveFileDefault();
                     return;
                 }
             }
@@ -232,7 +249,6 @@ class Parking{
                 }
             }
             if(!found){
-
                 cout << "Không có xe thuộc hãng này.\n";
             }
         }

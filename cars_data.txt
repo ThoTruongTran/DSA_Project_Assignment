@@ -18,3 +18,11 @@ VinFast
 Nguyen Minh Khue
 Volvo
 9
+29A-98765
+Bui Truong Linh
+Hongqi
+4
+99A-99999
+Ngo Tien Dung
+Volvo
+10
